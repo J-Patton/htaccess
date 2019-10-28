@@ -1,5 +1,6 @@
 # .htaccess optimization
-```<ifModule mod_gzip.c>
+
+<ifModule mod_gzip.c>
 mod_gzip_on Yes
 mod_gzip_dechunk Yes
 mod_gzip_item_include file .(html?|txt|css|js|php|pl)$
@@ -54,5 +55,5 @@ AddOutputFilterByType DEFLATE application/x-javascript
     Header set Cache-Control "max-age=3600, public, must-revalidate"
   </filesMatch>
 </ifModule>
-# END Caching```
+# END Caching
 
